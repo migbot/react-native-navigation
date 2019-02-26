@@ -55,6 +55,10 @@ public class NavigationReactGateway implements ReactGateway {
 		return reactEventEmitter;
 	}
 
+	public void recreateReactEventEmitter() {
+		reactEventEmitter = new NavigationReactEventEmitter(context);
+	}
+
 	@Override
 	public ReactInstanceManager getReactInstanceManager() {
 		return host.getReactInstanceManager();

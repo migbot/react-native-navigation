@@ -19,6 +19,8 @@ public interface ReactGateway {
 
     NavigationReactEventEmitter getReactEventEmitter();
 
+    void recreateReactEventEmitter();
+
     ReactInstanceManager getReactInstanceManager();
 
     void onResumeActivity(Activity activity, DefaultHardwareBackBtnHandler defaultHardwareBackBtnHandler);
